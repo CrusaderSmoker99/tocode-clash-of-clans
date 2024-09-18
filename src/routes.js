@@ -8,6 +8,7 @@ const routerHistory = createWebHashHistory()
 
 import HomePage from './pages/home.vue'
 import AboutPage from './pages/about.vue'
+import Item from './pages/itemAlias.vue'
 import NotFoundPage from './pages/notFound.vue'
 
 const routers = createRouter({
@@ -24,10 +25,16 @@ const routers = createRouter({
       component: AboutPage
     },
     {
+      path: '/:itemAlias',
+      name: 'itemAlias',
+      component: Item
+    },
+    {
       path: '/:CatchAll(.*)',
       name: '404',
       component: NotFoundPage
     }
+
   ]
 })
 

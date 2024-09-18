@@ -2,8 +2,6 @@
     <div class="wrapper">
         <Header/>
         <div class="wrapper-content">
-            <h1>Привет</h1>
-            <p>Большой привет</p>
             <div class="container">
                 <router-view/>
             </div>

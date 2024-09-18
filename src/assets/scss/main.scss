@@ -86,6 +86,7 @@ section,
 }
 
 .wrapper-content {
+  text-align: center;
   display: flex;
   flex-direction: column;
   min-height: 70vh;
@@ -125,3 +126,6 @@ section,
 
 @import './common/_common';
 @import './helpers/_helpers';
+
+// Подключение темы
+@import './theme.scss'
