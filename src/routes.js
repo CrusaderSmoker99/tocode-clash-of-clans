@@ -30,7 +30,7 @@ const routers = createRouter({
       component: Item
     },
     {
-      path: '/:CatchAll(.*)',
+      path: '/:CatchAll(.*)*',
       name: '404',
       component: NotFoundPage
     }

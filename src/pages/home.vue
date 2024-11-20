@@ -13,16 +13,8 @@
         {{ item.descr }}
       </template>
       <template v-slot:footer>
-        <div class="card-stats">
-          <div v-for="(stat,index) in item.info" :key="index" class="one-third">
-            
-            <CardFooterVue :title="stat.title" :value="stat.value">
-              
-            </CardFooterVue>
-          </div>
-        </div>
+            <CardFooterVue :info="item.info"></CardFooterVue>
       </template>
-      
     </Card>
   </slide>
   <template #addons>

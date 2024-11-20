@@ -16,6 +16,9 @@
                     <router-link to="/" class="btn btnPrimary">Домой</router-link>
                 </div>
         </div>
+        <div v-else>
+           {{this.$router.push({name:'404'})}}
+        </div>
     </div>
 </template>
 <script>
